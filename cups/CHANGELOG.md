@@ -6,6 +6,8 @@ The format is based on Keep a Changelog.
 
 ## [Unreleased]
 
+## [2.0.0-rc.4]
+
 ### Fixed
 - Preserved CUPS printers/classes across upgrades and restarts by saving files to `/data/cups/config` before symlinks are applied.
 
