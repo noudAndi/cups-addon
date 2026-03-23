@@ -17,6 +17,7 @@ This Home Assistant add-on provides a CUPS (Common Unix Printing System) print s
 - **Printer Support**: Compatible with a wide range of network and USB printers
 - **Lightweight**: Built on Alpine Linux for minimal resource usage
 - **Data Persistence**: Printer settings and configurations persist across restarts and updates
+- **Automatic mDNS Publishing**: Configured CUPS printers are announced via Avahi/Bonjour
 
 ## Installation
 
@@ -57,11 +58,13 @@ The add-on provides the following configuration options:
 admin_username: printadmin
 admin_password: your_secure_password
 force_regenerate_config: false
+enable_avahi: true
 ```
 
 - **admin_username**: Username for the CUPS admin interface (required)
 - **admin_password**: Password for the CUPS admin interface (required)
 - **force_regenerate_config**: One-shot option to replace persisted `cupsd.conf` with the latest managed default (a backup is created)
+- **enable_avahi**: Enable/disable Avahi mDNS publishing for configured printers
 
 Printing from LAN clients remains open, while CUPS administration requires the configured credentials.
 
@@ -80,6 +83,9 @@ After restart, set `force_regenerate_config` back to `false`.
 
 This add-on uses host networking so mDNS/Bonjour announcements are visible on the LAN.
 This is required for AirPrint discovery by iOS/macOS clients.
+
+Configured printers are published automatically over mDNS (Avahi) once they are added in CUPS.
+Set `enable_avahi: false` if you want to disable mDNS announcements.
 
 ## Accessing CUPS
 

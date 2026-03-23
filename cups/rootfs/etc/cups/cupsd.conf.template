@@ -77,3 +77,8 @@ WebInterface Yes
 DefaultAuthType Basic
 JobSheets none,none
 PreserveJobHistory No
+
+# Publish printers on local network using DNS-SD/mDNS.
+Browsing On
+BrowseLocalProtocols dnssd
+DefaultShared Yes

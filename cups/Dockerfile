@@ -18,6 +18,8 @@ RUN \
     apk add --no-cache \
         cups \
         cups-filters \
+        avahi \
+        avahi-tools \
         ghostscript \
         libjpeg-turbo \
         net-snmp \

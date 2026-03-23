@@ -6,6 +6,7 @@ source /usr/lib/bashio/bashio.sh
 ADMIN_USER="$(bashio::config 'admin_username')"
 ADMIN_PASSWORD="$(bashio::config 'admin_password')"
 FORCE_REGENERATE_CONFIG="$(bashio::config 'force_regenerate_config')"
+ENABLE_AVAHI="$(bashio::config 'enable_avahi')"
 
 CUPSD_CONF="/data/cups/config/cupsd.conf"
 TEMPLATE_PATH="/etc/cups/cupsd.conf.template"
@@ -99,3 +100,14 @@ ln -sf "${CUPSD_CONF}" /etc/cups/cupsd.conf
 ln -sf /data/cups/config/printers.conf /etc/cups/printers.conf
 ln -sf /data/cups/config/ppd /etc/cups/ppd
 ln -sf /data/cups/config/ssl /etc/cups/ssl
+
+if [[ "${ENABLE_AVAHI}" == "true" ]]; then
+  rm -f /etc/services.d/avahi/down /etc/services.d/cups-mdns/down
+  bashio::log.info "Avahi/mDNS publishing is enabled"
+else
+  mkdir -p /etc/avahi/services
+  : > /etc/services.d/avahi/down
+  : > /etc/services.d/cups-mdns/down
+  find /etc/avahi/services -maxdepth 1 -type f -name 'cups-printer-*.service' -delete
+  bashio::log.info "Avahi/mDNS publishing is disabled"
+fi
