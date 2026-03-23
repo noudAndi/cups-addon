@@ -6,6 +6,7 @@
 [![Supports armhf Architecture](https://img.shields.io/badge/armhf-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports armv7 Architecture](https://img.shields.io/badge/armv7-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports i386 Architecture](https://img.shields.io/badge/i386-yes-green.svg)](https://github.com/noudAndi/cups-addon)
+[![Add repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FnoudAndi%2Fcups-addon)
 
 This Home Assistant add-on provides a CUPS (Common Unix Printing System) print server, allowing you to manage and share printers over your local network. It's designed for Home Assistant users who want to integrate network printing capabilities directly into their smart home setup.
 
