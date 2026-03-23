@@ -3,4 +3,4 @@ set -e
 
 mkdir -p /run/avahi-daemon /etc/avahi/services
 
-exec /usr/sbin/avahi-daemon --no-drop-root --no-chroot --no-rlimits --no-dbus
+exec /usr/sbin/avahi-daemon --no-drop-root --no-chroot --no-rlimits -f /etc/avahi/avahi-daemon.conf
