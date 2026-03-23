@@ -2,7 +2,7 @@
 version: 2.0.0-rc.1
 slug: cups
 name: CUPS Print Server
-description: CUPS print server for network printing
+description: CUPS print server for network printing. Change the default admin password before first start.
 url: https://github.com/noudAndi/cups-addon
 arch:
   - aarch64
