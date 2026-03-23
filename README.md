@@ -1,11 +1,11 @@
 # Home Assistant CUPS Print Server Add-on
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/arest/cups-addon)
-[![Supports aarch64 Architecture](https://img.shields.io/badge/aarch64-yes-green.svg)](https://github.com/arest/cups-addon)
-[![Supports amd64 Architecture](https://img.shields.io/badge/amd64-yes-green.svg)](https://github.com/arest/cups-addon)
-[![Supports armhf Architecture](https://img.shields.io/badge/armhf-yes-green.svg)](https://github.com/arest/cups-addon)
-[![Supports armv7 Architecture](https://img.shields.io/badge/armv7-yes-green.svg)](https://github.com/arest/cups-addon)
-[![Supports i386 Architecture](https://img.shields.io/badge/i386-yes-green.svg)](https://github.com/arest/cups-addon)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/noudAndi/cups-addon)
+[![Supports aarch64 Architecture](https://img.shields.io/badge/aarch64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
+[![Supports amd64 Architecture](https://img.shields.io/badge/amd64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
+[![Supports armhf Architecture](https://img.shields.io/badge/armhf-yes-green.svg)](https://github.com/noudAndi/cups-addon)
+[![Supports armv7 Architecture](https://img.shields.io/badge/armv7-yes-green.svg)](https://github.com/noudAndi/cups-addon)
+[![Supports i386 Architecture](https://img.shields.io/badge/i386-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 
 This Home Assistant add-on provides a CUPS (Common Unix Printing System) print server, allowing you to manage and share printers over your local network. It's designed for Home Assistant users who want to integrate network printing capabilities directly into their smart home setup.
 
@@ -26,7 +26,7 @@ This Home Assistant add-on provides a CUPS (Common Unix Printing System) print s
 1. Navigate to your Home Assistant instance.
 2. Go to **Settings** → **Add-ons** → **Add-on Store**.
 3. Click the 3-dot menu in the top right corner and select **Repositories**.
-4. Add `https://github.com/arest/cups-addon` as a repository.
+4. Add `https://github.com/noudAndi/cups-addon` as a repository.
 5. Find the "CUPS Print Server" add-on in the store and click it.
 6. Click **Install**.
 
@@ -36,7 +36,7 @@ If you prefer to manually install:
 
 1. Clone this repository to your local machine:
    ```bash
-   git clone https://github.com/arest/cups-addon.git
+   git clone https://github.com/noudAndi/cups-addon.git
    ```
 
 2. Copy the repository to your Home Assistant add-ons directory:
