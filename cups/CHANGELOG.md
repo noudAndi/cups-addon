@@ -6,6 +6,8 @@ The format is based on Keep a Changelog.
 
 ## [Unreleased]
 
+## [2.0.0-rc.1]
+
 ### Added
 - Optional Avahi-based mDNS publishing for configured CUPS printers (`enable_avahi`).
 - Automatic mDNS service generation from configured CUPS queues.

@@ -1,6 +1,6 @@
 # Home Assistant CUPS Print Server Add-on
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/noudAndi/cups-addon)
+[![Version](https://img.shields.io/badge/version-2.0.0--rc.1-blue.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports aarch64 Architecture](https://img.shields.io/badge/aarch64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports amd64 Architecture](https://img.shields.io/badge/amd64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports armhf Architecture](https://img.shields.io/badge/armhf-yes-green.svg)](https://github.com/noudAndi/cups-addon)
