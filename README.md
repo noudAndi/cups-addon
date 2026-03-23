@@ -1,6 +1,6 @@
 # Home Assistant CUPS Print Server Add-on
 
-[![Version](https://img.shields.io/badge/version-2.0.0--rc.2-blue.svg)](https://github.com/noudAndi/cups-addon)
+[![Version](https://img.shields.io/badge/version-2.0.0--rc.3-blue.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports aarch64 Architecture](https://img.shields.io/badge/aarch64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports amd64 Architecture](https://img.shields.io/badge/amd64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Add repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FnoudAndi%2Fcups-addon)
@@ -113,6 +113,7 @@ Open the add-on from Home Assistant using **Open Web UI**, or visit `http://home
 1. Go to the **Administration** tab.
 2. Click **Add Printer** and follow the prompts.
 3. Select the appropriate driver for your printer model.
+4. Enable **Share This Printer** so it is published via Avahi/AirPrint.
 
 ### Print from Devices
 

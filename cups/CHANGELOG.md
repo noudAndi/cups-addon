@@ -4,6 +4,17 @@ All notable changes to this add-on are documented in this file.
 
 The format is based on Keep a Changelog.
 
+## [Unreleased]
+
+## [2.0.0-rc.3]
+
+### Added
+- Added `inotify-tools` to support event-driven AirPrint/Avahi service refreshes.
+
+### Changed
+- Updated mDNS service generation to use CUPS printer metadata and only publish shared printers.
+- Switched Avahi service refresh from fixed polling to inotify-based updates (with polling fallback).
+
 ## [2.0.0-rc.2]
 
 ### Fixed

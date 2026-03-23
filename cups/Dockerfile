@@ -18,6 +18,7 @@ RUN \
     apk add --no-cache \
         cups \
         cups-filters \
+        inotify-tools \
         avahi \
         avahi-tools \
         ghostscript \

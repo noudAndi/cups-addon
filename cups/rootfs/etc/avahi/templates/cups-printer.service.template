@@ -8,10 +8,13 @@
     <port>631</port>
     <txt-record>txtvers=1</txt-record>
     <txt-record>qtotal=1</txt-record>
-    <txt-record>rp=printers/__QUEUE_NAME__</txt-record>
-    <txt-record>pdl=application/octet-stream,application/pdf,image/jpeg,image/urf</txt-record>
-    <txt-record>URF=none</txt-record>
-    <txt-record>Color=T</txt-record>
-    <txt-record>Duplex=T</txt-record>
+    <txt-record>rp=__RP__</txt-record>
+    <txt-record>note=__NOTE__</txt-record>
+    <txt-record>ty=__TY__</txt-record>
+    <txt-record>product=__PRODUCT__</txt-record>
+    <txt-record>pdl=__PDL__</txt-record>
+    <txt-record>URF=__URF__</txt-record>
+    <txt-record>Color=__COLOR__</txt-record>
+    <txt-record>Duplex=__DUPLEX__</txt-record>
   </service>
 </service-group>

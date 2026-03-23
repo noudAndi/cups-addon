@@ -1,5 +1,11 @@
 {
     "files.associations": {
         "*.yaml": "home-assistant"
+    },
+    "chat.tools.terminal.autoApprove": {
+        "/^cd /Users/andreas/coding/cups-addon && bash -n cups/rootfs/usr/local/bin/publish-cups-mdns\\.sh && nl -ba cups/rootfs/etc/avahi/templates/cups-printer\\.service\\.template \\| sed -n '1,40p' && echo '---' && nl -ba cups/rootfs/usr/local/bin/publish-cups-mdns\\.sh \\| sed -n '29,90p'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 }
