@@ -4,20 +4,16 @@ slug: cups
 name: CUPS Print Server
 description: CUPS print server for network printing
 url: https://github.com/noudAndi/cups-addon
-codenotary: andrea_restello@yahoo.it
 arch:
-  - armhf
-  - armv7
   - aarch64
   - amd64
-  - i386
 hassio_api: true
 host_network: true
 map:
   - data:rw
   - share:rw
 init: false
-webui: http://[HOST]:631
+webui: http://[HOST]:[PORT:631]
 options:
   admin_username: "printadmin"
   admin_password: "change_me_now"
