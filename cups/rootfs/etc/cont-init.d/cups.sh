@@ -9,7 +9,7 @@ FORCE_REGENERATE_CONFIG="$(bashio::config 'force_regenerate_config')"
 ENABLE_AVAHI="$(bashio::config 'enable_avahi')"
 
 CUPSD_CONF="/data/cups/config/cupsd.conf"
-TEMPLATE_PATH="/etc/cups/cupsd.conf.template"
+TEMPLATE_PATH="/usr/local/share/cups/cupsd.conf.template"
 
 if [[ -z "${ADMIN_USER}" ]]; then
   bashio::log.fatal "Configuration admin_username must not be empty"
@@ -95,11 +95,11 @@ fi
 addgroup "${ADMIN_USER}" lpadmin >/dev/null 2>&1 || true
 printf '%s:%s\n' "${ADMIN_USER}" "${ADMIN_PASSWORD}" | chpasswd
 
-# Create a symlink from the default config location to our persistent location
-ln -sf "${CUPSD_CONF}" /etc/cups/cupsd.conf
-ln -sf /data/cups/config/printers.conf /etc/cups/printers.conf
-ln -sf /data/cups/config/ppd /etc/cups/ppd
-ln -sf /data/cups/config/ssl /etc/cups/ssl
+# Replace /etc/cups with a single symlink to persistent storage.
+rm -rf /etc/cups
+ln -s /data/cups/config /etc/cups
+
+chown -R root:lp /data/cups/config
 
 if [[ "${ENABLE_AVAHI}" == "true" ]]; then
   rm -f /etc/services.d/avahi/down /etc/services.d/cups-mdns/down

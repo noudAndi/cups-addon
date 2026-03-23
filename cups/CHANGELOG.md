@@ -6,6 +6,12 @@ The format is based on Keep a Changelog.
 
 ## [Unreleased]
 
+### Fixed
+- Preserved CUPS printers/classes across upgrades and restarts by saving files to `/data/cups/config` before symlinks are applied.
+
+### Changed
+- Replaced per-file symlinks with a single `/etc/cups -> /data/cups/config` symlink for fully persistent CUPS state.
+
 ## [2.0.0-rc.3]
 
 ### Added
