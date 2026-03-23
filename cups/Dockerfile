@@ -18,13 +18,17 @@ RUN \
     apk add --no-cache \
         cups \
         cups-filters \
-        hplip \
         avahi \
         avahi-tools \
         ghostscript \
         libjpeg-turbo \
         net-snmp \
         epson-inkjet-printer-escpr
+
+RUN apk add --no-cache \
+    --repository=https://dl-cdn.alpinelinux.org/alpine/edge/main \
+    --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community \
+    hplip
 
 # Copy data
 COPY rootfs /
