@@ -81,17 +81,28 @@ After restart, set `force_regenerate_config` back to `false`.
 This add-on uses host networking so mDNS/Bonjour announcements are visible on the LAN.
 This is required for AirPrint discovery by iOS/macOS clients.
 
+## Accessing CUPS
+
+After the add-on starts, open the add-on page in Home Assistant and use the **Open Web UI** button.
+
+You can also access CUPS directly in a browser at:
+
+- `http://homeassistant.local:631`
+- `http://<your-ha-ip>:631`
+
+If `homeassistant.local` does not resolve on your network, use the Home Assistant host IP address.
+
 After configuring:
 
 1. Start the add-on from the Info tab.
 2. Check the Log tab to ensure it starts successfully.
-3. Access the CUPS web interface at `http://<your-ha-ip>:631`.
+3. Click **Open Web UI**, or open `http://<your-ha-ip>:631` manually.
 
 ## Usage
 
 ### Access the Web Interface
 
-Visit `http://<your-ha-ip>:631` in your browser.
+Open the add-on from Home Assistant using **Open Web UI**, or visit `http://homeassistant.local:631` or `http://<your-ha-ip>:631` in your browser.
 
 ### Add a Printer
 

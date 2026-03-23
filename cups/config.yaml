@@ -17,6 +17,7 @@ map:
   - data:rw
   - share:rw
 init: false
+webui: http://[HOST]:631
 options:
   admin_username: "printadmin"
   admin_password: "change_me_now"
