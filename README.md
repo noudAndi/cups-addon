@@ -130,6 +130,8 @@ This add-on supports various printer types:
 - Shared Windows printers (via Samba)
 - AirPrint for Apple devices
 
+HP printers using the `hpcups` driver are supported (provided by `hplip` in the image).
+
 ## Troubleshooting
 
 ### Can't Access Web Interface
@@ -146,8 +148,8 @@ This add-on supports various printer types:
 
 
 ### Printer Drivers
-   https://www.openprinting.org/download/PPD/
-   https://www.openprinting.org/drivers/
+   - https://www.openprinting.org/download/PPD/
+   - https://www.openprinting.org/drivers/
 
 ### Authentication Issues
 
