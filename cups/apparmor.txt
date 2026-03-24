@@ -21,13 +21,14 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
   signal (send) set=(kill,term,int,hup,cont),
 
   # S6-Overlay
-  /init ix,
-  /bin/** ix,
-  /usr/bin/** ix,
-  /usr/sbin/** ix,
-  /run/{s6,s6-rc*,service}/** ix,
-  /package/** ix,
-  /command/** ix,
+  # Use rix for startup paths because /init may be launched via /bin/sh.
+  /init rix,
+  /bin/** rix,
+  /usr/bin/** rix,
+  /usr/sbin/** rix,
+  /run/{s6,s6-rc*,service}/** rix,
+  /package/** rix,
+  /command/** rix,
   /etc/services.d/** rwix,
   /etc/cont-init.d/** rwix,
   /etc/cont-finish.d/** rwix,
@@ -42,7 +43,7 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
   /dev/urandom r,
 
   # Bashio
-  /usr/lib/bashio/** ix,
+  /usr/lib/bashio/** rix,
 
   # Add-on data and mapped paths
   /data/** rwk,
@@ -51,7 +52,7 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
   # CUPS and Avahi configuration/runtime files
   /etc/cups/** rwk,
   /etc/avahi/** rwk,
-  /usr/local/bin/** ix,
+  /usr/local/bin/** rix,
   /usr/local/share/** r,
 
   # Binary and library loading
