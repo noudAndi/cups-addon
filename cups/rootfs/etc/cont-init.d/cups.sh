@@ -1,6 +1,8 @@
 #!/usr/bin/with-contenv bash
+# shellcheck shell=bash
 set -euo pipefail
 
+# shellcheck source=/dev/null
 source /usr/lib/bashio/bashio.sh
 
 ADMIN_USER="$(bashio::config 'admin_username')"

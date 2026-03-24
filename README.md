@@ -146,8 +146,9 @@ HP printers using the `hpcups` driver are supported (provided by `hplip` in the 
 
 
 ### Printer Drivers
-   - https://www.openprinting.org/download/PPD/
-   - https://www.openprinting.org/drivers/
+
+- [OpenPrinting PPD Downloads](https://www.openprinting.org/download/PPD/)
+- [OpenPrinting Drivers](https://www.openprinting.org/drivers/)
 
 ### Authentication Issues
 

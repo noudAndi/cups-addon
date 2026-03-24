@@ -12,8 +12,9 @@ ENV CUPS_SERVERROOT=/data/cups/config
 
 # Setup base
 RUN \
-    echo "https://dl-cdn.alpinelinux.org/alpine/v$(cat /etc/alpine-release | cut -d'.' -f1,2)/main" > /etc/apk/repositories && \
-    echo "https://dl-cdn.alpinelinux.org/alpine/v$(cat /etc/alpine-release | cut -d'.' -f1,2)/community" >> /etc/apk/repositories && \
+    ALPINE_BRANCH="$(cut -d'.' -f1,2 /etc/alpine-release)" && \
+    echo "https://dl-cdn.alpinelinux.org/alpine/v${ALPINE_BRANCH}/main" > /etc/apk/repositories && \
+    echo "https://dl-cdn.alpinelinux.org/alpine/v${ALPINE_BRANCH}/community" >> /etc/apk/repositories && \
     apk update && \
     apk add --no-cache \
         cups \
