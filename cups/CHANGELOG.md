@@ -6,6 +6,11 @@ The format is based on Keep a Changelog.
 
 ## [Unreleased]
 
+## [2.0.0-rc.9]
+
+### Changed (2.0.0-rc.9)
+- Maintenance release: version bump to `2.0.0-rc.9`.
+
 ## [2.0.0-rc.8]
 
 ### Changed (2.0.0-rc.8)

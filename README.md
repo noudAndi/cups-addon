@@ -1,6 +1,6 @@
 # Home Assistant CUPS Print Server Add-on
 
-[![Version](https://img.shields.io/badge/version-2.0.0--rc.7-blue.svg)](https://github.com/noudAndi/cups-addon)
+[![Version](https://img.shields.io/badge/version-2.0.0--rc.9-blue.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports aarch64 Architecture](https://img.shields.io/badge/aarch64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Supports amd64 Architecture](https://img.shields.io/badge/amd64-yes-green.svg)](https://github.com/noudAndi/cups-addon)
 [![Add repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2FnoudAndi%2Fcups-addon)

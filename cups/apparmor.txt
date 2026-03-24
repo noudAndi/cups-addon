@@ -26,6 +26,7 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
   /bin/** rix,
   /usr/bin/** rix,
   /usr/sbin/** rix,
+  /run/s6/basedir/bin/** rix,
   /run/{s6,s6-rc*,service}/** rwk,
   /etc/s6-overlay/s6-rc.d/ r,
   /etc/s6-overlay/s6-rc.d/** r,
