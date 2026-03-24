@@ -85,6 +85,24 @@ This is required for AirPrint discovery by iOS/macOS clients.
 Configured printers are published automatically over mDNS (Avahi) once they are added in CUPS.
 Set `enable_avahi: false` if you want to disable mDNS announcements.
 
+## AppArmor
+
+This add-on includes a custom AppArmor profile at [cups/apparmor.txt](cups/apparmor.txt).
+Home Assistant loads this profile automatically when the add-on starts.
+
+If you need to tune access rules for your environment:
+
+1. Start the add-on and reproduce the action that fails.
+2. Check Home Assistant host audit logs for AppArmor denials.
+3. Add only the minimum required rule(s) to [cups/apparmor.txt](cups/apparmor.txt).
+4. Restart the add-on and test again.
+
+Example audit log command on the Home Assistant host:
+
+```bash
+journalctl _TRANSPORT="audit" -g 'apparmor="DENIED"'
+```
+
 ## Accessing CUPS
 
 After the add-on starts, open the add-on page in Home Assistant and use the **Open Web UI** button.
