@@ -26,7 +26,9 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
   /bin/** rix,
   /usr/bin/** rix,
   /usr/sbin/** rix,
-  /run/{s6,s6-rc*,service}/** rix,
+  /run/{s6,s6-rc*,service}/** rwk,
+  /etc/s6-overlay/s6-rc.d/ r,
+  /etc/s6-overlay/s6-rc.d/** r,
   /package/** rix,
   /command/** rix,
   /etc/services.d/** rwix,
@@ -35,6 +37,8 @@ profile cups flags=(attach_disconnected,mediate_deleted) {
 
   # Runtime state
   /run/{,**} rwk,
+  /run/cups/** rwk,
+  /run/avahi-daemon/** rwk,
   /tmp/** rwk,
 
   # Device access

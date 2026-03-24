@@ -36,5 +36,8 @@ RUN apk add --no-cache \
 # Copy data
 COPY rootfs /
 
+# Fix permissions for s6-overlay service scripts
+RUN chmod -R +x /etc/cont-init.d /etc/services.d
+
 HEALTHCHECK \
     CMD lpstat -r || exit 1
