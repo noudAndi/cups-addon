@@ -57,3 +57,6 @@ coverage/
 *.tar
 .cache/
 .parcel-cache/
+
+# Linter reports
+megalinter-reports/*
