@@ -6,32 +6,13 @@ The format is based on Keep a Changelog.
 
 ## [Unreleased]
 
-## [2.0.0-rc.9]
+## [2.0.0]
 
-### Changed (2.0.0-rc.9)
-- Maintenance release: version bump to `2.0.0-rc.9`.
-
-## [2.0.0-rc.8]
-
-### Changed (2.0.0-rc.8)
-- Maintenance release: version bump to `2.0.0-rc.8`.
-
-## [2.0.0-rc.7]
-
-### Changed (2.0.0-rc.7)
-- Maintenance release: version bump to `2.0.0-rc.7`.
-
-## [2.0.0-rc.6]
-
-### Changed (2.0.0-rc.6)
-- Maintenance release: version bump to `2.0.0-rc.6`.
-
-## [2.0.0-rc.5]
-
-### Changed (2.0.0-rc.5)
-- Maintenance release: version bump to `2.0.0-rc.5`.
-
-## [2.0.0-rc.4]
+### Changed (2.0.0)
+- Stable release: version bump to `2.0.0`.
+- Removing apparmor for now
+- Adds dev-container config and tasks for local development
+- rc5 to rc9 did not contain functional changes (mainly testing, which I will do locally from now on.)
 
 ### Fixed (2.0.0-rc.4)
 - Preserved CUPS printers/classes across upgrades and restarts by saving files to `/data/cups/config` before symlinks are applied.
