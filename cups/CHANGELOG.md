@@ -8,17 +8,19 @@ The format is based on Keep a Changelog.
 
 ## [2.0.0]
 
-### Changed (2.0.0)
-- Stable release: version bump to `2.0.0`.
-- Removing apparmor for now
-- Adds dev-container config and tasks for local development
-- rc5 to rc9 did not contain functional changes (mainly testing, which I will do locally from now on.)
+### Added
+- Optional Avahi-based mDNS publishing for configured CUPS printers.
+- Event-driven service refreshes using inotify.
 
-### Fixed (2.0.0-rc.4)
-- Preserved CUPS printers/classes across upgrades and restarts by saving files to `/data/cups/config` before symlinks are applied.
+### Changed
+- Stable release of the 2.0 generation.
+- Improved CUPS startup and runtime behavior for Home Assistant environments.
+- Updated repository metadata and developer tooling for local development.
 
-### Changed (2.0.0-rc.4)
-- Replaced per-file symlinks with a single `/etc/cups -> /data/cups/config` symlink for fully persistent CUPS state.
+### Fixed
+- Preserved CUPS printers and classes across upgrades and restarts.
+- Improved Web UI and add-on configuration compatibility with Home Assistant Supervisor.
+- Resolved Avahi startup issues and improved CUPS plus Avahi integration.
 
 ## [2.0.0-rc.3]
 
